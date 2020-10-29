@@ -32,3 +32,22 @@ const countriesContainingi = countries.filter((countries) =>
   countries.includes('i')
 )
 console.log(countriesContainingi)
+
+// every: Check if all the elements are similar in one aspect. It returns boolean
+
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+const areAllStr = names.every((name) => typeof name === 'string')
+
+console.log(arrAllStr)
+
+//find: Return the first element which satisfies the condition
+const result = names.find((name) => name.length > 7)
+console.log(result)
+
+//findIndex: Return the position of the first element which satisfies the condition
+const result = names.findIndex((name) => name.length > 7)
+console.log(result) // 0
+
+//sort
+const products = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot']
+console.log(products.sort()) // ['Apple', 'Carrot', 'Coffee', 'Honey', 'Milk', 'Sugar']
